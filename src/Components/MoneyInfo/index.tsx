@@ -1,5 +1,8 @@
-import { TaxDetails } from '../../Functions/Utils/Conversions';
+//Style
 import MoneyInfoBox from './Style';
+
+//Functions
+import { TaxDetails } from '../../Functions/Utils/Conversions';
 
 interface iProps {
     paymentMethod: string,

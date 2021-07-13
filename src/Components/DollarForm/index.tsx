@@ -1,8 +1,15 @@
+//Packages
 import Grid from '@material-ui/core/Grid';
 import InputAdornment from '@material-ui/core/InputAdornment';
+
+//Components
 import PaymentMethod from '../PaymentMethod';
 import { ConvertButton } from '../Buttons';
+
+//Style
 import { FormBox, TextFieldBox, Label, GreenTextField } from './Style';
+
+//Functions
 import { ReturnFormatted, ReturnPositive, ReturnValidPercentage } from '../../Functions/Utils/TextValidation';
 
 interface iProps {

@@ -1,7 +1,13 @@
-import {Conversion} from '../../Functions/Utils/Conversions'
+//Components
 import {BackButton} from '../Buttons'
 import MoneyInfo from '../MoneyInfo'
+
+//Style
 import {TitleText, ConvertText, InfoText} from './Style'
+
+//Functions
+import {Conversion} from '../../Functions/Utils/Conversions'
+
 interface iProps{
     dollarAmount: any,
     percentage: any,

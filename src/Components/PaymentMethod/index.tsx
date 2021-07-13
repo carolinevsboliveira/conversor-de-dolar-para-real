@@ -1,6 +1,10 @@
+//Package
 import { withStyles } from '@material-ui/core/styles';
 import { FormControl, FormControlLabel, RadioGroup, Radio, RadioProps } from '@material-ui/core';
+
+//Style
 import { Label, PaymentBox } from './Style'
+
 interface iProps {
   paymentMethod: string,
   paymentMethodHandler: Function

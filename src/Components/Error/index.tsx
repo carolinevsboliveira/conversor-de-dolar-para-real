@@ -1,6 +1,11 @@
+//Package
+import RotateLeftIcon from '@material-ui/icons/RotateLeft';
+
+//Style
 import { BackButtonStyled } from "../Buttons/Style"
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import { ErrorBox, ErrorText, Img } from "./Style";
+
+//Assets
 import Logo from "../../Assets/Images/Logo.svg"
 const Error = () => {
 
@@ -11,7 +16,7 @@ const Error = () => {
                 <BackButtonStyled
                     variant="contained"
                     size="large"
-                    startIcon={<ArrowBackIcon />} onClick={() => { document.location.reload() }}>&nbsp;Recarregar</BackButtonStyled>
+                    startIcon={<RotateLeftIcon />} onClick={() => { document.location.reload() }}>&nbsp;Recarregar</BackButtonStyled>
                 <ErrorText>Uh, algo deu errado :/</ErrorText>
             </ErrorBox>
         </>

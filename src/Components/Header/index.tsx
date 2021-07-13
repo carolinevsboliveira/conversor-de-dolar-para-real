@@ -1,7 +1,15 @@
+//Package
 import Grid from '@material-ui/core/Grid';
+
+//Style
 import { Img, ContainerText, MainBox, Info, InfoMorning } from './Style';
-import Logo from "../../Assets/Images/Logo.svg"
+
+//Functions
 import { ReturnFormatted } from '../../Functions/Utils/TextValidation';
+
+//Assets
+import Logo from "../../Assets/Images/Logo.svg"
+
 
 interface iProps {
     day: string,
