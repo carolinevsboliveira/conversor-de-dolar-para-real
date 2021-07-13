@@ -12,11 +12,11 @@ import Result from '../Result';
 //Functions
 import { CheckIfInputIsValid } from '../../Functions/Utils/TextValidation';
 
-interface iProps{
-  day: any, 
+interface iProps {
+  day: any,
   hour: any,
-  dollarCurrentValue: Number, 
-  dayHandler: Function, 
+  dollarCurrentValue: Number,
+  dayHandler: Function,
   hourHandler: Function
 }
 
@@ -34,29 +34,38 @@ const Main = (props: iProps) => {
 
   return (
     <div className="">
-      
       <GlobalStyle />
-      <Header currentValue={props.dollarCurrentValue} day={props.day} hour={props.hour} />
+      <Header
+        currentValue={props.dollarCurrentValue}
+        day={props.day}
+        hour={props.hour}
+      />
       <div>
-        {(convertClicked) ? <DollarForm dollarAmount={dollarAmount}
-          dollarAmountHandler={setdollarAmount}
-          percentage={percentage}
-          percentageHandler={setPercentage}
-          paymentMethod={paymentMethod}
-          paymentMethodHandler={setPaymentMethod}
-          convertClicked={convertClicked}
-          convertClickedHandler={setConvertClicked}
-          enabledButton={enableButton} />
-          :
-          <Result dollarCurrentValue={props.dollarCurrentValue}
+        {convertClicked ? (
+          <DollarForm
+            dollarAmount={dollarAmount}
+            dollarAmountHandler={setdollarAmount}
+            percentage={percentage}
+            percentageHandler={setPercentage}
+            paymentMethod={paymentMethod}
+            paymentMethodHandler={setPaymentMethod}
+            convertClicked={convertClicked}
+            convertClickedHandler={setConvertClicked}
+            enabledButton={enableButton}
+          />
+        ) : (
+          <Result
+            dollarCurrentValue={props.dollarCurrentValue}
             dollarAmount={dollarAmount}
             percentage={percentage}
             paymentMethod={paymentMethod}
             backClicked={!convertClicked}
-            backClickedHandler={setConvertClicked} />}
+            backClickedHandler={setConvertClicked}
+          />
+        )}
       </div>
     </div>
   );
 }
 
-export default Main;
+export default Main

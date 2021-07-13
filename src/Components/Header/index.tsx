@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import { Img, ContainerText, MainBox, Info, InfoMorning } from './Style';
 
 //Functions
-import { ReturnFormatted } from '../../Functions/Utils/TextValidation';
+import {  ReturnFormattedNumber } from '../../Functions/Utils/TextValidation';
 
 //Assets
 import Logo from "../../Assets/Images/Logo.svg"
@@ -27,8 +27,13 @@ const Header = (props: iProps) => {
                     <Grid item xs={12} md={8} lg={4}>
                         <InfoMorning>
                             <ContainerText>
-                                <Info>$ {ReturnFormatted(props.currentValue.toString())} | {props.day} | {props.hour}</Info>
-                                <InfoMorning>Dados de câmbio disponibilizados pela Morningstar.</InfoMorning>
+                                <Info>
+                                    $ {ReturnFormattedNumber(props.currentValue.toString())} |{" "}
+                                    {props.day} | {props.hour}
+                                </Info>
+                                <InfoMorning>
+                                    Dados de câmbio disponibilizados pela Morningstar.
+                                </InfoMorning>
                             </ContainerText>
                         </InfoMorning>
                     </Grid>
@@ -38,4 +43,4 @@ const Header = (props: iProps) => {
     );
 };
 
-export default Header;
+export default Header
