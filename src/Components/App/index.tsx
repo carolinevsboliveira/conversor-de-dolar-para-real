@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import GlobalStyle from '../GlobalStyle';
 
 //Functions
-import FetchUSDData from "../../Functions/API/FetchUSDdata";
+import FetchDollarData from '../../Functions/API/FetchDollarData';
 import { FormatDate } from '../../Functions/Utils/FormatDate';
 
 //Components
@@ -20,7 +20,7 @@ function App() {
   const [hasError, sethasError] = useState(false);
 
   useEffect(() => {
-    FetchUSDData().then((apiData) => {
+    FetchDollarData().then((apiData) => {
       if(apiData.ask && apiData.create_date){
         setdollarCurrentValue(apiData.ask || 0)
         setDay(FormatDate(apiData.create_date).day)
