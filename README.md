@@ -36,7 +36,7 @@ Para executar esse projeto é necessário ter:
     ``` npm install```  
 4. Executar o projeto  
     ``` npm start```  
-5. Por padrão o projeto está disponível localmente no endereço: 
+5. Por padrão o projeto está disponível localmente no endereço:  
     ```localhost:3000```  
 
 ## Dúvidas
