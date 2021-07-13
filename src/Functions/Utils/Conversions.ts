@@ -17,8 +17,9 @@ const TaxDetails = (dollarAmount: any, percentage: any, dollarCurrentValue: any,
         paymentMethod: paymentMethod === "dinheiro" ? 1.10 : 6.38,
         dollarValueWithTax: dollarValueWithTax.toFixed(2),
         realValueWithoutTax: realValueWithoutTax.toFixed(2),
-        paymentMethodName: paymentMethod === "dinheiro" ? "Dinheiro" : "Cartão"
     }
 }
-
-export { Conversion, TaxDetails }
+const ReturnPaymentMethodName = (paymentMethod: string) =>{
+    return paymentMethod === "cartao" ? "Cartão" : "Dinheiro"
+}
+export { Conversion, TaxDetails, ReturnPaymentMethodName }
