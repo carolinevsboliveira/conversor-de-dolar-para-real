@@ -1,6 +1,10 @@
-import {ConvertButtonStyled, BackButtonStyled} from './Style'
+//Packages
 import SwapHorizIcon from '@material-ui/icons/SwapHoriz';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+
+//Style
+import {ConvertButtonStyled, BackButtonStyled} from './Style'
+
 interface iProps{
     btnName: string
     btnClicked:boolean,
