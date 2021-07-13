@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 const MoneyInfoBox = styled.div`
     padding-top: 0.8rem;
     p{
@@ -8,4 +9,4 @@ const MoneyInfoBox = styled.div`
         margin-inline: 0;
     }
 `;
-export default MoneyInfoBox;
+export default MoneyInfoBox

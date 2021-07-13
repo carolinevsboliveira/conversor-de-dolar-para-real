@@ -1,5 +1,5 @@
-import { createGlobalStyle,  } from 'styled-components';
-import Mask from "../Assets/Images/Mask.png";
+import { createGlobalStyle, } from 'styled-components'
+import Mask from '../Assets/Images/Mask.png'
 
 const GlobalStyle = createGlobalStyle`
   body  {
@@ -24,5 +24,4 @@ const GlobalStyle = createGlobalStyle`
   }
  
 `;
- 
-export default GlobalStyle;
+export default GlobalStyle
