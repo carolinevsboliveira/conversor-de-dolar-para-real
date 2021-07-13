@@ -29,15 +29,25 @@ Para executar esse projeto é necessário ter:
 ## Passo a passo de execução  
 
 1. Clonar o repositório  
-    ```git clone https://github.com/carolinevsboliveira/conversor-de-dolar-para-real``` 
+    ```
+    git clone https://github.com/carolinevsboliveira/conversor-de-dolar-para-real
+    ``` 
 2. Acessar a pasta onde o projeto está salvo  
-   ``` cd <pasta de clonagem>/<conversor-de-dolar-para-real>```  
+   ``` 
+   cd <pasta de clonagem>/<conversor-de-dolar-para-real>
+   ```  
 3. Instalar as dependências com o comando 
-    ``` npm install```  
+    ``` 
+    npm install
+    ```  
 4. Executar o projeto  
-    ``` npm start```  
-5. Por padrão o projeto está disponível localmente no endereço:  
-    ```localhost:3000```  
+    ```
+    npm start
+    ```  
+5. Por padrão o projeto está disponível localmente no endereço: 
+    ```
+    localhost:3000
+    ```  
 
 ## Dúvidas
 Qualquer dúvida, entre em contato. Estou à disposição. 
