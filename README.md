@@ -1,7 +1,7 @@
 # Conversor de Dólar (U$) em Reais (R$)
 
 Projeto desenvolvido como teste técnico para Desenvolvedor FrontEnd na [Stone Co.](https://www.stone.co/br/).  
-O projeto pode ser acessado através [deste link](https://conversor-de-dolar-para-real-4mwzwu9ar-carolinevsboliveira.vercel.app/).
+O projeto pode ser acessado através [deste link](https://conversor-de-dolar-para-real.vercel.app/).
 
 ## Recursos utilizados
 Para configuração:
