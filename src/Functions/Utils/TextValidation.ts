@@ -1,6 +1,6 @@
 const CheckIfInputIsValid = (value:string, percentage:string) => {
     if(value.startsWith("--") || percentage.startsWith("--")) return false
-    return Number(value) > 0  && Number(percentage) >= 0
+    return Number(value) > 0.009   && Number(percentage) >= 0
 }
 
 const ReturnFormattedNumber = (text:string) => {
