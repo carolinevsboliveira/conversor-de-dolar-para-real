@@ -1,4 +1,5 @@
 const CheckIfInputIsValid = (value:string, percentage:string) => {
+    if(value.startsWith("--") || percentage.startsWith("--")) return false
     return Number(value) > 0  && Number(percentage) >= 0
 }
 
@@ -15,9 +16,9 @@ const ReturnPositive = (text:string) =>{
     return Number(text) >= 0 ? text : - text
 }
 
-const ReturnValidPercentage = (text: string) => {
-    var number = ReturnPositive(text)
-    if (Number(number) >= 10000) return "9999"
-    return number
+const ReturnValidPercentage = (text:string) => {
+    if(Number(text) < 0 ) return ""
+    if(Number(text) >= 10000) return "9999"
+    return text
 }
 export { CheckIfInputIsValid, ReturnFormattedPercentage, ReturnPositive, ReturnFormattedNumber, ReturnValidPercentage }
