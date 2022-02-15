@@ -41,6 +41,8 @@ const DollarForm = (props: iProps) => {
                 required
                 type="number"
                 placeholder="0.01"
+                aria-label='valor em dolar'
+                role='textbox'
                 value={ReturnPositive(props.dollarAmount)}
                 onChange={(event: any) => {
                   props.dollarAmountHandler(event.target.value);
